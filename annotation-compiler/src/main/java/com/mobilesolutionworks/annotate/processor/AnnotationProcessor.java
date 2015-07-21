@@ -52,7 +52,7 @@ public class AnnotationProcessor extends AbstractProcessor
 
                 try
                 {
-                    String generatedClassName = className + "$$Test";
+                    String generatedClassName = className + "Binding";
                     String output = packageName + "." + generatedClassName;
                     System.out.println("output = " + output);
 
@@ -71,6 +71,8 @@ public class AnnotationProcessor extends AbstractProcessor
                     // e.printStackTrace();
                 }
             }
+
+            return true;
         }
 
         return true;

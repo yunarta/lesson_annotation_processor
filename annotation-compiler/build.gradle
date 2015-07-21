@@ -5,6 +5,10 @@ sourceCompatibility = '1.7'
 
 sourceSets {
     main {
-        java.srcDir  'src'
+        java.srcDirs = ['src/main/java']
     }
+}
+
+dependencies {
+    compile project(':annotation-api')
 }
